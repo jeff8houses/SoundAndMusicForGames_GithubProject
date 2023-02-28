@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Anthony Spiritoso" ID="{B59247E6-CD23-4C48-BDD6-CCA898627290}" ShortID="717942504">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4EBE9388-60C7-4A20-AF35-05E78E8BB42E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CF4F398E-2B99-4408-BAC7-C1CD98CC93D6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="moog_beeps_24" ID="{4354CD90-514A-49AE-9C1A-3AFE61480250}">
+							<Language>SFX</Language>
+							<AudioFile>moog_beeps_24.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="343118103"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="moog_beeps_24" ID="{4354CD90-514A-49AE-9C1A-3AFE61480250}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
