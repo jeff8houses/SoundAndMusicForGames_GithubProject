@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Kyle Glueckert" ID="{67E96F70-E120-4747-A7B5-A3EE34C93900}" ShortID="989621836">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-180</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{632369F3-302C-4EB6-9634-3723D867F3FE}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4EBE9388-60C7-4A20-AF35-05E78E8BB42E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CF4F398E-2B99-4408-BAC7-C1CD98CC93D6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="KG_Shoe_Lace_Front_Whip" ID="{ADAFDA8C-9E60-4528-A07A-4C053C1F1DCD}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.14982813230482"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.68267531556802"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>KG_Shoe_Lace_Front_Whip.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="229830501"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="KG_Shoe_Lace_Front_Whip" ID="{ADAFDA8C-9E60-4528-A07A-4C053C1F1DCD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
