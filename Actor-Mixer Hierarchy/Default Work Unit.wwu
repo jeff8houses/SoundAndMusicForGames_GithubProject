@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FDB14486-EFEF-4617-A521-50924F8E7D61}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Jeremy mARE addtion fr" ID="{C89C7FE0-F908-46CA-8395-C15E9AE73FCD}" ShortID="826217465">
+					<PropertyList>
+						<Property Name="OutputBusLowpass" Type="int16">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4EBE9388-60C7-4A20-AF35-05E78E8BB42E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CF4F398E-2B99-4408-BAC7-C1CD98CC93D6}"/>
+						</Reference>
+					</ReferenceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
